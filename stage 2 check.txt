@@ -1,0 +1,40 @@
+NB title=Hogwarts a History,author=Bathilda Bagshot,year_published=1947,subject=Historical,section=Non-Restricted
+NB title=Winogrand's Wondrous Water Plants,author=Selina Sapworthy,year_published=1970,subject=Water plants,section=Non-Restricted
+NB title=Ancient Runes Made Easy,author=Laurenzoo,year_published=1992,subject=Ancient Runes,section=Non-Restricted
+NB title=Magick Moste Evile,author=Godelot,year_published=1300,subject=Dark Arts,section=Restricted
+NB title=Secrets of the Darkest Art,author=Owle Bullock,year_published=1943,subject=Dark Arts,section=Restricted
+NB title=Fifteenth-Century Fiends,author=Unknown,year_published=1991,subject=Fiends,section=Non-Restricted
+NB title=Basic Hexes for the Busy and Vexed,author=Unknown,year_published=1994,subject=Hexes,section=Non-Restricted
+AS student_name=Draco Malfoy,house=Slytherin
+AS student_name=Hermione Granger,house=Gryffindor
+AS student_name=Harry Potter,house=Gryffindor
+AS student_name=Luna Lovegood,house=Ravenclaw
+SD 12 / 09 / 2020
+PL ** Test Checking Out Books
+PL **** Successful Checkout: Optional number_of_days Present
+CB title=Fifteenth-Century Fiends,student_name=Harry Potter,number_of_days=2
+CB title=Winogrand's Wondrous Water Plants,student_name=Hermione Granger,number_of_days=4
+PL **** Successful Checkout:Optional number_of_days Not Present
+CB title=Ancient Runes Made Easy,student_name=Draco Malfoy
+PL **** Checkout a Restricted Title
+PL ****** Checkout a Restricted Title: with a Valid Pass Code
+CB title=Secrets of the Darkest Art,student_name=Hermione Granger,pass_code=Accio
+CB title=Magick Moste Evile,student_name=Draco Malfoy,pass_code=Protego,number_of_days=1
+PL ** Test Check Out Reports
+CR
+PL
+PL **** List books available to be Checked Out
+LA
+PL ** Test Due Today Report & Advance Date Function
+DT
+PL
+AD
+DT
+PL
+AD
+DT
+PL
+AD
+DT
+PL
+PL Thank you for using the Hogwarts Library Management System!

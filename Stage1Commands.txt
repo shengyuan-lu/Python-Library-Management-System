@@ -1,0 +1,42 @@
+** This is a sample command file for the Hogwarts Library, Stage I
+PL ***********************************************************
+PL Here is a list of available books (before adding any!)
+** A well-written program works gracefully with empty structures.
+PL ** List Inventory when there are no books
+LI
+PL 
+PL ** Now let's add a book:
+NB title=Curses and Counter-Curses,author=Vindictus Viridian,year_published=1703,subject=Curses,section=Restricted
+
+PL ** List Inventory when there is 1 book
+LI
+PL 
+** And some more:
+** Extra blanks around the command should be ignored
+Nb    title=Winogrand's Wondrous Water Plants,author=Selina Sapworthy,year_published=1970,subject=Water plants,section=Non-Restricted
+PL Try adding a book that is already in inventory
+Nb    title=Winogrand's Wondrous Water Plants,author=Selina Sapworthy,year_published=1970,subject=Water plants,section=Non-Restricted
+PL 
+    NB title=Ancient Runes Made Easy,author=Laurenzoo,year_published=1992,subject=Ancient Runes,section=Non-Restricted
+
+PL ** List Inventory when there are multiple books
+ LI
+PL 
+PL ** Test deleting a book from the book collection
+DB     title=Winogrand's Wondrous Water Plants
+PL ** Test Find Book with a single search parameter
+FB section=Restricted
+PL 
+
+** Add Students to Library Members
+AS student_name=Draco Malfoy,house=Slytherin
+AS student_name=Hermione Granger,house=Gryffindor
+AS student_name=Harry Potter,house=Gryffindor
+AS student_name=Luna Lovegood,house=Ravenclaw
+
+PL ** List Current Library Members
+LM
+PL
+
+PL Thank you for using the Hogwarts Library Management System!
+** That's the end of the sample data for Stage I.
